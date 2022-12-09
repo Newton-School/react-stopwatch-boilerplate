@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import '../styles/App.css';
 const App = () => {
+  const startTime = useRef(0);
+  const intervalRef = useRef(0);
+  const [currentTime, setCurrentTime] = useState(0);
+  const [laps, setLaps] = useState([]);
 
   return (
     <div id="main">
